@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoFun/Autos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+       <!-- fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
+      <!-- end fonts -->
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body style="font-family: Roboto;">
+    <div class="body-wrapper">
+      <div class="d-flex flex-column vh-100">
+        <!--header-->
+        <header class="div1">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand ps-5 d-none d-lg-block" href="index.html">AutoFun</a>
+            <div class="container-fluid justify-content-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Hauptseite</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="autos.html" >Autos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ueber_uns.html">Über Uns</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galarie.html">Galarie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html" tabindex="-1" aria-disabled="true">Kontakt</a>
+                  </li>
+                  <li><a href="autoverkauf.html"><button class="btn btn-sm btn-danger" type="button">Auto Verkaufen</button></a></li>
+                  <li class="pe-5 ms-2"><button class="btn btn-sm btn-dark d-lg-block px-2  active" data-bs-toggle="modal" data-bs-target="#loginModal" type="button">Login</button></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <!--Ende header-->
+
+        <!--Main-->
+        <main class="div2 flex-grow-1">
+
+                  <!-- modal login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btnClose"></button>
+              </div>
+              <div class="modal-body">
+
+                <!-- form login-->
+                <div class="form">
+                  <div class="mb-3">
+                    <label for="benutzername" class="form-label">Benutzername</label>
+                    <input type="text" class="form-control" id="benutzername" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="benutzerpasword">
+                  </div>
+                  <div class="mb-3 form-check">
+                  </div>
+                  <p id="einlogenFehlerMeldung" class="text-danger"></p>
+                  <button onclick="einlogen();" type="submit" class="btn btn-dark btn-right">Anmelden</button>
+                </div>
+                <!-- ende form login-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ende modal login -->
+          <div class="container">
+           
+          </div>
+        </main>
+        <!--Ende Main-->
+
+        <!--Footer-->
+        <footer class="div3 pt-5 pb-5 container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h6>Kontakt:</h6>
+
+                Email:
+                <a href="mailto:serghei_pascal@gmail.com" 
+                  >serghei_pascal@gmail.com</a
+                >
+                <br />
+                Tel: 0 678 463 53 748
+              </div>
+              <div class="col-md-4 text-center">
+                <h6>Partners:</h6>
+                Schinagl Andreas
+                <br />
+                Jeremic Dejan
+              </div>
+              <div class="col-md-4 text-end">
+                <h6>Adresse:</h6>
+                Simmeringer Hauptstrasse 55
+                <br />
+                1110 Wien
+               
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--Ende Footer-->
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

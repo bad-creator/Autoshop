@@ -1,0 +1,88 @@
+
+
+:root{
+    --white: #F5F5F5;
+    --black: black;
+    --very-dark-gray:#293136;
+    --dark-gray: #28323B;
+    --midle-gray:#2C363F;
+    --secondary-gray:#28323B;
+    --red:#ed1a14;
+    --white-shadow:#d1d1d1;
+}
+img.link:hover{
+    cursor: pointer;
+}
+
+body{
+    background: var(--white);
+    padding-top: 100px;
+}
+footer {
+    background-color: var(--midle-gray);
+    color: rgba(255, 255, 255, 0.423);
+}
+footer a,footer a:hover{
+    color: rgba(255, 255, 255, 0.423);
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
+.bg-white{
+    background-color: var(--white);
+}
+.car{
+    margin-bottom: 20px;
+}
+.car:hover{
+    box-shadow: 0 0 20px 10px var(--white-shadow);
+    transition: 1s;
+}
+
+.preis{
+    font-weight: 600;
+}
+.sidebar-stop{
+    position: sticky;
+    top:150px;
+}
+
+.carousel-indicators button{
+    width: 100px!important;
+    margin-bottom: 50px;
+}
+
+
+img, svg{
+    margin-bottom: 84px;
+}
+
+/* willkommen */
+.animation {
+   
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+  
+  .animation span {
+    transition: 0.5s ease-out;
+  }
+  .animation:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+  
+  .animation:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  .animation:hover span {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--white-shadow), 0 0 20px var(--white-shadow), 0 0 40px var(--white-shadow);
+  }
+/* willkommen ende */
+
+
